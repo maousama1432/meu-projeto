@@ -6,16 +6,16 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const produtos = [
-  {id:1, Imagem: "public/imagem/frente.jpg", nome: "abc", descricao: "descricao", preco: "2500", classificacao: "informatica"},
-  {id:2, Imagem: "public/imagem/costas.jpg",nome: "afu", descricao: "descricao", preco: "3000", classificacao: "informatica"},
-  {id:3, Imagem: "public/imagem/incluido.jpg",nome: "nasfkuahfuoome", descricao: "descricao", preco: "7000", classificacao: "informatica"},
-  {id:4, Imagem: "public/imagem/logo.jpg",nome: "awfkugfuwa", descricao: "descricao", preco: "1200", classificacao: "informatica"},
-  {id:5, Imagem: "public/imagem/teclado.jpg",nome: "noakfwuioafuoawfme", descricao: "descricao", preco: "2700", classificacao: "informatica"},
-  {id:6, Imagem: "Imagem",nome: "nome", descricao: "wakfwiafaowuguwg", preco: "preco", classificacao: "classificacao"},
-  {id:7, Imagem: "Imagem",nome: "nome", descricao: "descawfkugwauofwricao", preco: "preco", classificacao: "classificacao"},
-  {id:8, Imagem: "Imagem",nome: "nome", descricao: "desc123713123ricao", preco: "preco", classificacao: "classificacao"},
-  {id:9, Imagem: "Imagem",nome: "nome", descricao: "descricao", preco: "preco", classificacao: "classificacao"},
-  {id:10, Imagem: "Imagem",nome: "nome", descricao: "descricao", preco: "preco", classificacao: "classificacao"}
+  {id:1, Imagem: "/imagem/frente.jpg", nome: "A", descricao: "K", preco: "2500", classificacao: "informatica"},
+  {id:2, Imagem: "/imagem/costas.jpg",nome: "B", descricao: "L", preco: "3000", classificacao: "informatica"},
+  {id:3, Imagem: "/imagem/incluido.jpg",nome: "C", descricao: "M", preco: "7000", classificacao: "informatica"},
+  {id:4, Imagem: "/imagem/logo.jpg",nome: "D", descricao: "N", preco: "1200", classificacao: "informatica"},
+  {id:5, Imagem: "/imagem/teclado.jpg",nome: "E", descricao: "O", preco: "2700", classificacao: "informatica"},
+  {id:6, Imagem: "/imagem/frente.jpg",nome: "F", descricao: "P", preco: "2500", classificacao: "informatica"},
+  {id:7, Imagem: "/imagem/costas.jpg",nome: "G", descricao: "Q", preco: "3000", classificacao: "informatica"},
+  {id:8, Imagem: "/imagem/incluido.jpg",nome: "H", descricao: "R", preco: "7000", classificacao: "informatica"},
+  {id:9, Imagem: "/imagem/logo.jpg",nome: "I", descricao: "S", preco: "1200", classificacao: "informatica"},
+  {id:10, Imagem: "/imagem/teclado.jpg",nome: "J", descricao: "T", preco: "2700", classificacao: "informatica"}
 ]
 
 function buscaPorId(id){
