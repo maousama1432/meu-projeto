@@ -40,14 +40,14 @@
     </div>
 </nav>
 
-
+<% for (let produto of produtos) {%>
   <div class="container mt-5">
     <div class="row d-flex flex-row">
       <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mx-auto">
         <div class="card">
-            <img src="/imagem/incluido.jpg" class="card-img-top imagens" alt="Product Image">
+            <img src="<%= produto.imagem %>" class="card-img-top imagens" alt="Product Image">
             <div class="card-body">
-              <h4 class="card-title limit-text">Notebook Samsung NP550XDA-KV3BR Intel Core i3-1115G4 4GB 256GB SSD Tela 15,6" Windows 11 - Cinza Chumbo</h4>
+              <h4 class="card-title limit-text"><%= produto.nome %></h4>
                 <p class="card-text text-muted" id="descricao">8x de R$ 312,48 sem juros no cartão de crédito <br>
                   receba de volta R$ 125,00 na Ame</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -69,9 +69,9 @@
             </div>
         </div>
     </div>
+    <% } %>
 
-
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mx-auto">
+    <!--<div class="col-lg-4 col-md-6 col-sm-12 mb-4 mx-auto">
       <div class="card">
               <img src="/imagem/incluido.jpg" class="card-img-top imagens" alt="Product Image">
               <div class="card-body">
@@ -210,7 +210,7 @@
             </div>
           </div>
       </div>
-  </div>
+  </div>-->
 
 
 <script>
